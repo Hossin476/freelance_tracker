@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "test",
+      "email": "dqdsq@sdfdsf",
+      "password": "123456789",
+      "hourlyRate": 75,
+      "currency": "USD",
+      "preferences": {
+        "theme": "light",
+        "invoicePrefix": "INV-"
+      },
+      "token": "simulated_jwt_token_1743590072580"
+    },
+    {
+      "id": 1743592169930,
+      "name": "test2",
+      "email": "dqdsq@sdfdsfs",
+      "password": "123456789",
+      "hourlyRate": 75,
+      "currency": "USD",
+      "preferences": {
+        "theme": "light",
+        "invoicePrefix": "INV-"
+      },
+      "token": "simulated_jwt_token_1743592169930"
+    }
+  ],
+  "clients": [
+    {
+      "id": 1743607156116,
+      "name": "test",
+      "contactPerson": "cwxcwxw",
+      "email": "dqdsq@sdfdsf",
+      "phone": "136455",
+      "address": {
+        "street": "cxwcwxw",
+        "city": "qsdsq",
+        "state": "jkhk",
+        "zip": "wcwxc",
+        "country": "xcwxc"
+      },
+      "notes": "kjhjkk",
+      "userId": 1
+    }
+  ],
+  "projects": [
+    {
+      "id": 1743605840592,
+      "name": "test",
+      "description": "xfsdfdsfsd",
+      "budget": 200,
+      "userId": 1,
+      "status": "Completed"
+    },
+    {
+      "id": 1743612123847,
+      "name": "wcwcxwcw",
+      "description": "wivjkfjhdfsdfhsdf",
+      "budget": 0.02,
+      "status": "On Hold",
+      "userId": 1
+    },
+    {
+      "id": 1743614364463,
+      "name": "cxcwxc",
+      "description": "cwx wxcwxc",
+      "budget": 0.01,
+      "status": "In Progress",
+      "userId": 1
+    }
+  ],
+  "timeEntries": [
+    {
+      "id": 1743614385098,
+      "description": "xwcwxcwxc",
+      "startTime": "2025-04-17T22:19",
+      "endTime": "2025-04-22T17:19",
+      "duration": 115,
+      "userId": 1
+    }
+  ],
+  "invoices": []
+}
