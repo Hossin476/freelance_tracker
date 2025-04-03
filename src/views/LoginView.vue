@@ -66,7 +66,7 @@ function togglePasswordVisibility() {
                     </p>
                 </div>
 
-                <form class="mt-8 space-y-6 animate-fade-in" @submit.prevent="handleSubmit">
+                <form class="mt-8 space-y-6 " @submit.prevent="handleSubmit">
                     <div class="space-y-2">
                         <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
                             Email address
@@ -135,48 +135,3 @@ function togglePasswordVisibility() {
         </div>
     </div>
 </template>
-
-<style scoped>
-.animate-fade-in {
-    animation: fadeIn 0.5s ease-out;
-}
-
-.animate-shake {
-    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes shake {
-
-    0%,
-    100% {
-        transform: translateX(0);
-    }
-
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-        transform: translateX(-5px);
-    }
-
-    20%,
-    40%,
-    60%,
-    80% {
-        transform: translateX(5px);
-    }
-}
-</style>

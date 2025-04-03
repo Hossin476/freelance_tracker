@@ -76,7 +76,7 @@ function toggleConfirmPasswordVisibility() {
                     </p>
                 </div>
 
-                <form class="space-y-2 animate-fade-in" @submit.prevent="handleSubmit">
+                <form class="space-y-2 " @submit.prevent="handleSubmit">
                     <div class="space-y-2">
                         <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
                             Full Name
@@ -187,7 +187,7 @@ function toggleConfirmPasswordVisibility() {
 </template>
 
 <style scoped>
-.animate-fade-in {
+. {
     animation: fadeIn 0.5s ease-out;
 }
 
