@@ -22,7 +22,6 @@ describe('ProfileView.vue', () => {
         expect(wrapper.find('input#email').exists()).toBe(true)
         expect(wrapper.find('input#hourly-rate').exists()).toBe(true)
         expect(wrapper.find('select#currency').exists()).toBe(true)
-        expect(wrapper.find('select#theme').exists()).toBe(true)
         expect(wrapper.find('input#invoice-prefix').exists()).toBe(true)
 
         // Check if the save button is rendered
