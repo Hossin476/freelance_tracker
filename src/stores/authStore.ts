@@ -75,7 +75,7 @@ export const useAuthStore = defineStore('auth', () => {
             logout()
         }
     }
-
+    // Partial makes all properties of a template optional
     async function updateUserProfile(updatedUser: Partial<User>) {
         error.value = null
 

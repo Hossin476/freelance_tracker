@@ -69,8 +69,8 @@ async function updateProject(updatedProject: { id: number; status: string }) {
                 <div class="flex justify-between items-center">
                     <h1 class="text-2xl font-bold text-gray-900 dark:text-white">Dashboard</h1>
                     <div class="flex items-center">
-                        <span class="text-sm text-gray-500 dark:text-gray-300 mr-4">Welcome, {{ user?.name
-                            }}</span>
+                        <span class="text-sm text-gray-500 dark:text-gray-300 mr-4">Welcome, <a href="/profile">{{ user?.name
+                            }}</a> </span>
                         <button @click="authStore.logout()"
                             class="px-3 py-1 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-md text-sm cursor-pointer">
                             Logout

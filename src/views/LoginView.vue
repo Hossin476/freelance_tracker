@@ -68,12 +68,11 @@ function togglePasswordVisibility() {
 
                 <form class="mt-8 space-y-6 animate-fade-in" @submit.prevent="handleSubmit">
                     <div class="space-y-2">
-                        <label for="email-address" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
                             Email address
                         </label>
                         <div class="relative">
-                            <input id="email-address" v-model="email" name="email" type="email" autocomplete="email"
-                                required
+                            <input id="email" v-model="email" name="email" type="email" autocomplete="email" required
                                 class="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 pl-4 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:ring-emerald-700"
                                 placeholder="you@example.com" />
                         </div>
