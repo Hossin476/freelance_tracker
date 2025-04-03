@@ -7,7 +7,6 @@ const name = ref('')
 const contactPerson = ref('')
 const email = ref('')
 const phone = ref('')
-const address = ref({ street: '', city: '', state: '', zip: '', country: '' })
 const notes = ref('')
 const isSubmitting = ref(false)
 
@@ -25,7 +24,6 @@ async function addClient() {
             contactPerson: contactPerson.value,
             email: email.value,
             phone: phone.value,
-            address: address.value,
             notes: notes.value,
         })
         emit('client-added')

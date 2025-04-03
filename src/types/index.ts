@@ -15,13 +15,6 @@ export interface Client {
     contactPerson: string
     email: string
     phone: string
-    address: {
-        street: string
-        city: string
-        state: string
-        zip: string
-        country: string
-    }
     notes: string
     active: boolean
     userId: number
