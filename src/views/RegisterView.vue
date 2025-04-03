@@ -60,11 +60,11 @@ function toggleConfirmPasswordVisibility() {
 </script>
 
 <template>
-    <div class="flex min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div class="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900">
         <div class="flex w-full items-center justify-center px-4 sm:px-6 lg:w-1/2 lg:px-8">
             <div class="w-full max-w-md space-y-8">
                 <div class="text-center">
-                    <h2 class=" text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h2 class=" mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
                         Create a new account
                     </h2>
                     <p class=" text-center text-sm text-gray-600 dark:text-gray-400">
@@ -76,36 +76,36 @@ function toggleConfirmPasswordVisibility() {
                     </p>
                 </div>
 
-                <form class="space-y-2 " @submit.prevent="handleSubmit">
-                    <div class="space-y-2">
+                <form class="space-y-3 " @submit.prevent="handleSubmit">
+                    <div class="space-y-3">
                         <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
                             Full Name
                         </label>
                         <div class="relative">
                             <input id="name" v-model="name" name="name" type="text" required
-                                class="block w-full rounded-md border border-gray-300 bg-white px-4 py-1 pl-4 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:ring-emerald-700"
+                                class="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 pl-4 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:ring-emerald-700"
                                 placeholder="John Doe" />
                         </div>
                     </div>
-                    <div class="space-y-2">
+                    <div class="space-y-3">
                         <label for="email-address" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
                             Email address
                         </label>
                         <div class="relative">
                             <input id="email-address" v-model="email" name="email" type="email" autocomplete="email"
                                 required
-                                class="block w-full rounded-md border border-gray-300 bg-white px-4 py-1 pl-4 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:ring-emerald-700"
+                                class="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 pl-4 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:ring-emerald-700"
                                 placeholder="john@example.com" />
                         </div>
                     </div>
-                    <div class="space-y-2">
+                    <div class="space-y-3">
                         <label for="password" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
                             Password
                         </label>
                         <div class="relative">
                             <input id="password" v-model="password" :type="showPassword ? 'text' : 'password'"
                                 name="password" autocomplete="new-password" required
-                                class="block w-full rounded-md border border-gray-300 bg-white px-4 py-1 pl-4 pr-10 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:ring-emerald-700"
+                                class="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 pl-4 pr-10 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:ring-emerald-700"
                                 placeholder="••••••••" />
                             <button type="button" @click="togglePasswordVisibility"
                                 class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 cursor-pointer">
@@ -138,7 +138,7 @@ function toggleConfirmPasswordVisibility() {
                             <input id="confirm-password" v-model="confirmPassword"
                                 :type="showConfirmPassword ? 'text' : 'password'" name="confirm-password"
                                 autocomplete="new-password" required
-                                class="block w-full rounded-md border border-gray-300 bg-white px-4 py-1 pl-4 pr-10 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:ring-emerald-700"
+                                class="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 pl-4 pr-10 shadow-sm focus:border-emerald-500 focus:ring focus:ring-emerald-200 focus:ring-opacity-50 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:focus:ring-emerald-700"
                                 placeholder="••••••••" />
                             <button type="button" @click="toggleConfirmPasswordVisibility"
                                 class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 cursor-pointer">
@@ -185,21 +185,3 @@ function toggleConfirmPasswordVisibility() {
         </div>
     </div>
 </template>
-
-<style scoped>
-. {
-    animation: fadeIn 0.5s ease-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-</style>
