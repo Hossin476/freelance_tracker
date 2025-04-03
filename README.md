@@ -59,3 +59,21 @@ npm run test:e2e
 ```sh
 npm run lint
 ```
+
+## Challenges Faced
+
+1. **State Management**: Managing state across multiple components and ensuring data consistency was challenging. Pinia was used to simplify state management.
+2. **Authentication**: Implementing token-based authentication and ensuring secure API communication required careful handling.
+3. **Responsive Design**: Ensuring the UI is responsive and works seamlessly across devices required additional effort.
+4. **Error Handling**: Providing meaningful error messages and handling edge cases in API interactions was a key focus.
+5. **Testing**: Writing comprehensive unit and end-to-end tests to ensure application reliability was time-consuming but essential.
+
+## Future Improvements
+
+1. **Enhanced Reporting**: Add detailed analytics and reporting features for better insights into projects and time tracking.
+2. **Mobile App**: Develop a mobile version of the application for better accessibility.
+3. **Real-Time Updates**: Implement real-time updates using WebSockets for collaborative features.
+4. **Multi-Currency Support**: Expand currency options and integrate real-time exchange rates.
+5. **Third-Party Integrations**: Add integrations with popular tools like Slack, Trello, and payment gateways.
+6. **Improved UI/UX**: Continuously refine the user interface and experience based on user feedback.
+7. **Localization**: Add support for multiple languages to cater to a global audience.
