@@ -1,6 +1,6 @@
-# freelance_tracker
+# Freelance Tracker
 
-This template should help get you started developing with Vue 3 in Vite.
+Freelance Tracker is a comprehensive tool designed to help freelancers efficiently manage their business operations. It provides features for project management, time tracking, invoice generation, client management, and more, all in one place. The application is built using Vue 3, Vite, and Pinia for state management, ensuring a modern and responsive user experience.
 
 ## Recommended IDE Setup
 

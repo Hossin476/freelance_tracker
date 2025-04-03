@@ -74,36 +74,3 @@ export interface InvoiceItem {
     rate: number
     amount: number
 }
-
-export interface Expense {
-    id: number
-    projectId: number
-    category: string
-    description: string
-    amount: number
-    date: string
-    billable: boolean
-    invoiceId: number | null
-    receiptUrl: string
-    taxDeductible: boolean
-    userId: number
-}
-
-export interface Category {
-    id: number
-    name: string
-    type: 'expense' | 'service'
-    userId: number
-}
-
-export interface Stat {
-    name: string
-    value: string
-}
-
-export interface Deadline {
-    id: number
-    name: string
-    deadline: string
-    daysLeft: number
-}
