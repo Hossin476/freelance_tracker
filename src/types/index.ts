@@ -5,7 +5,6 @@ export interface User {
     hourlyRate?: number
     currency?: string
     preferences?: {
-        theme: 'light' | 'dark'
         invoicePrefix: string
     }
 }

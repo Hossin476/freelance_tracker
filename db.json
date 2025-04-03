@@ -1,5 +1,19 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": 1743681201066,
+      "name": "test",
+      "email": "dqdsq@sdfdsf",
+      "password": "123456789",
+      "hourlyRate": 75,
+      "currency": "USD",
+      "preferences": {
+        "theme": "light",
+        "invoicePrefix": "INV-"
+      },
+      "token": "simulated_jwt_token_1743681201066"
+    }
+  ],
   "clients": [],
   "projects": [],
   "timeEntries": [],
