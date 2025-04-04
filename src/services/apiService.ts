@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-const API_URL = 'http://localhost:3000'
+const API_URL = 'https://freelancetracker-production.up.railway.app'
 
 class ApiService {
     async get(endpoint: string) {
